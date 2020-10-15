@@ -31,7 +31,7 @@ void PLLandClockConfSet(void)
   //---------20.04.2012-------------------------------------
   
   
-  APBDIV_bit.APBDIV   = 0;    //VPB - Pclk=Cclk - 01
+  APBDIV_bit.APBDIV   = 2;    //VPB - Pclk=Cclk - 01
   APBDIV_bit.XCLKDIV = 1;
   
 }
@@ -45,6 +45,17 @@ void GPIO2ConfSet(void)
   IO2CLR_bit.P2_16 = 1;
   IO2DIR_bit.P2_17 = 1;
   IO2CLR_bit.P2_17 = 1;
+  
+  DIR_CS6 = OUTPUT_PIN;
+}
+
+void GPIO0ConfSet(void)
+{
+  DIR_TX = OUTPUT_PIN;
+  
+  DIR_CLK = OUTPUT_PIN;
+  
+  
 }
 
 
@@ -88,6 +99,8 @@ void InitUART0(void)
   U0LCR_bit.DLAB = 1;
   U0DLL = BAUDRATEDIVISOR & 0x00ff;
   U0DLM = (BAUDRATEDIVISOR >> 8) & 0x00ff;
+  U0FDR_bit.DIVADDVAL = 0;
+  U0FDR_bit.MULVAL = 1;
   U0LCR_bit.DLAB = 0;
 
   //Set mode

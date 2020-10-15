@@ -2373,6 +2373,9 @@
         <name>$PROJ_DIR$\configHW.c</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\DAC.c</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\I2C.c</name>
     </file>
     <file>

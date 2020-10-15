@@ -12,19 +12,11 @@
 
 "--device=LPC2214" 
 
-"--multicore_nr_of_cores=1" 
+"--drv_communication=USB0" 
 
-"--jet_standard_reset=2,300,200" 
+"--drv_interface_speed=auto" 
 
-"--reset_style=\"0,-,0,Disabled__no_reset_\"" 
-
-"--reset_style=\"1,-,0,Software\"" 
-
-"--reset_style=\"2,-,1,Hardware\"" 
-
-"--jet_power_from_probe=leave_on" 
-
-"--board_file=C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\flashloader\NXP\FlashNXPLPC256K.board" 
+"--jlink_initial_speed=1000" 
 
 
 

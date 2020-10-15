@@ -1,5 +1,6 @@
 
 #include "main.h"
+#include "pindef.h"
 #include <stdio.h>
 
 int main()
@@ -21,7 +22,7 @@ int main()
   StartTimer0();
   while(1)
   {
-    Sleep(10);
+    Sleep(100);
     inv_temp = ~inv_temp;
     if(IO2PIN_bit.P2_16 == 1)
     {
@@ -31,9 +32,9 @@ int main()
     {
       IO2SET_bit.P2_16 = 1;
     }
-    
+//    printf("U");
     printf("Enter value:\n\r>");
-    scanline((char*)&name);
+//    scanline((char*)&name);
     printf("\nHello %s.  Welcome to IAR Systems.\n\n\n\r", name);
   }
 

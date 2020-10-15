@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.20.1.14183/W32 for ARM                22/Apr/2019  16:02:38
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                15/Oct/2020  17:50:15
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,8 +8,9 @@
 #    Map file     =  
 #        D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\List\AT1315_iar_v8_2018.map
 #    Command line =  
-#        -f C:\Users\CHIRIK~1\AppData\Local\Temp\EWF0C0.tmp
+#        -f C:\Users\CHIRIK~1\AppData\Local\Temp\EW4CB6.tmp
 #        (D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj\configHW.o
+#        D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj\DAC.o
 #        D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj\I2C.o
 #        D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj\InterruptConf.o
 #        D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj\main.o
@@ -79,7 +80,7 @@ No sections matched the following patterns:
 "P1", part 1 of 2:                         0x0
   .rodata          const    0x0000003c     0x0  zero_init3.o [5]
 
-"P1", part 2 of 2:                      0x2828
+"P1", part 2 of 2:                      0x2800
   Veneer           ro code  0x00000200    0x10  - Linker created -
   .text            ro code  0x00000210   0xedc  xprintffull_nomb.o [3]
   Veneer           ro code  0x000010ec     0x4  - Linker created -
@@ -124,38 +125,38 @@ No sections matched the following patterns:
   .text            ro code  0x000021d8     0x4  IntDivZer.o [5]
   Veneer           ro code  0x000021dc     0x4  - Linker created -
   .text            ro code  0x000021e0    0x20  exit.o [6]
-  .text            ro code  0x00002200   0x20c  configHW.o [1]
-  .text            ro code  0x0000240c   0x164  InterruptConf.o [1]
-  .text            ro code  0x00002570   0x106  Serial.o [1]
-  .text            ro code  0x00002678    0xa6  UART0.o [1]
-  .text            ro code  0x0000271e     0x2  UART0.o [1]
-  .text            ro code  0x00002720    0xb0  main.o [1]
-  Veneer           ro code  0x000027d0     0x4  - Linker created -
-  .text            ro code  0x000027d4    0x10  main.o [1]
-  Veneer           ro code  0x000027e4     0x4  - Linker created -
-  .text            ro code  0x000027e8    0x10  main.o [1]
-  .text            ro code  0x000027f8    0x44  Timer0.o [1]
-  .text            ro code  0x0000283c    0x28  printf.o [3]
-  .text            ro code  0x00002864    0x58  cstartup.o [5]
-  Veneer           ro code  0x000028bc     0xc  - Linker created -
-  Veneer           ro code  0x000028c8     0xc  - Linker created -
-  Veneer           ro code  0x000028d4     0xc  - Linker created -
-  Veneer           ro code  0x000028e0     0xc  - Linker created -
-  .text            ro code  0x000028ec    0x30  cmain.o [5]
-  .text            ro code  0x0000291c     0x4  low_level_init.o [3]
-  .text            ro code  0x00002920    0x32  data_init.o [5]
-  .text            ro code  0x00002952     0xa  exit.o [3]
-  Veneer           ro code  0x0000295c     0x4  - Linker created -
-  .text            ro code  0x00002960    0x10  cexit.o [5]
-  .text            ro code  0x00002970    0x3c  zero_init3.o [5]
-  .rodata          const    0x000029ac    0x28  main.o [1]
-  .iar.init_table  const    0x000029d4    0x10  - Linker created -
-  .text            ro code  0x000029e4    0x1a  xprout.o [3]
-  .rodata          const    0x00002a00    0x10  main.o [1]
-  .rodata          const    0x00002a10    0x10  xprintffull_nomb.o [3]
-  .text            ro code  0x00002a20     0x4  vectortrap.o [5]
-  .text            ro code  0x00002a24     0x4  xreturnswi.o [6]
-                          - 0x00002a28  0x2828
+  .text            ro code  0x00002200   0x240  configHW.o [1]
+  .text            ro code  0x00002440   0x164  InterruptConf.o [1]
+  .text            ro code  0x000025a4    0xb0  Serial.o [1]
+  .text            ro code  0x00002654    0xa6  UART0.o [1]
+  .text            ro code  0x000026fa     0x2  UART0.o [1]
+  .text            ro code  0x000026fc    0xac  main.o [1]
+  Veneer           ro code  0x000027a8     0x4  - Linker created -
+  .text            ro code  0x000027ac    0x10  main.o [1]
+  Veneer           ro code  0x000027bc     0x4  - Linker created -
+  .text            ro code  0x000027c0    0x10  main.o [1]
+  .text            ro code  0x000027d0    0x44  Timer0.o [1]
+  .text            ro code  0x00002814    0x28  printf.o [3]
+  .text            ro code  0x0000283c    0x58  cstartup.o [5]
+  Veneer           ro code  0x00002894     0xc  - Linker created -
+  Veneer           ro code  0x000028a0     0xc  - Linker created -
+  Veneer           ro code  0x000028ac     0xc  - Linker created -
+  Veneer           ro code  0x000028b8     0xc  - Linker created -
+  .text            ro code  0x000028c4    0x30  cmain.o [5]
+  .text            ro code  0x000028f4     0x4  low_level_init.o [3]
+  .text            ro code  0x000028f8    0x32  data_init.o [5]
+  .text            ro code  0x0000292a     0xa  exit.o [3]
+  Veneer           ro code  0x00002934     0x4  - Linker created -
+  .text            ro code  0x00002938    0x10  cexit.o [5]
+  .text            ro code  0x00002948    0x3c  zero_init3.o [5]
+  .rodata          const    0x00002984    0x28  main.o [1]
+  .iar.init_table  const    0x000029ac    0x10  - Linker created -
+  .text            ro code  0x000029bc    0x1a  xprout.o [3]
+  .rodata          const    0x000029d8    0x10  main.o [1]
+  .rodata          const    0x000029e8    0x10  xprintffull_nomb.o [3]
+  .text            ro code  0x000029f8     0x4  vectortrap.o [5]
+  .text            ro code  0x000029fc     0x4  xreturnswi.o [6]
+                          - 0x00002a00  0x2800
 
 "P2", part 1 of 2:                        0x68
   .bss             zero     0x40000120    0x14  main.o [1]
@@ -183,119 +184,123 @@ No sections matched the following patterns:
     FIQ_STACK      uninit   0x400009d8    0x10  <Block tail>
                           - 0x400009e8   0x860
 
-Absolute sections, part 1 of 25:           0x8
+Absolute sections, part 1 of 26:           0x8
   .noinit          uninit   0xe0004000     0x4  Timer0.o [1]
   .noinit          uninit   0xe0004004     0x4  configHW.o [1]
                           - 0xe0004008     0x8
 
-Absolute sections, part 2 of 25:           0x4
+Absolute sections, part 2 of 26:           0x4
   .noinit          uninit   0xe000400c     0x4  configHW.o [1]
                           - 0xe0004010     0x4
 
-Absolute sections, part 3 of 25:           0x8
+Absolute sections, part 3 of 26:           0x8
   .noinit          uninit   0xe0004014     0x4  configHW.o [1]
   .noinit          uninit   0xe0004018     0x4  configHW.o [1]
                           - 0xe000401c     0x8
 
-Absolute sections, part 4 of 25:           0x4
+Absolute sections, part 4 of 26:           0x4
   .noinit          uninit   0xe0004028     0x4  configHW.o [1]
                           - 0xe000402c     0x4
 
-Absolute sections, part 5 of 25:           0x4
+Absolute sections, part 5 of 26:           0x4
   .noinit          uninit   0xe000403c     0x4  configHW.o [1]
                           - 0xe0004040     0x4
 
-Absolute sections, part 6 of 25:           0x1
+Absolute sections, part 6 of 26:           0x1
   .noinit          uninit   0xe000c000     0x1  UART0.o [1]
                           - 0xe000c001     0x1
 
-Absolute sections, part 7 of 25:           0x9
+Absolute sections, part 7 of 26:           0x9
   .noinit          uninit   0xe000c004     0x4  configHW.o [1]
   .noinit          uninit   0xe000c008     0x4  UART0.o [1]
   .noinit          uninit   0xe000c00c     0x1  configHW.o [1]
                           - 0xe000c00d     0x9
 
-Absolute sections, part 8 of 25:           0x1
+Absolute sections, part 8 of 26:           0x1
   .noinit          uninit   0xe000c014     0x1  UART0.o [1]
                           - 0xe000c015     0x1
 
-Absolute sections, part 9 of 25:          0x10
+Absolute sections, part 9 of 26:           0x4
+  .noinit          uninit   0xe000c028     0x4  configHW.o [1]
+                          - 0xe000c02c     0x4
+
+Absolute sections, part 10 of 26:         0x10
   .noinit          uninit   0xe0028020     0x4  main.o [1]
   .noinit          uninit   0xe0028024     0x4  main.o [1]
   .noinit          uninit   0xe0028028     0x4  configHW.o [1]
   .noinit          uninit   0xe002802c     0x4  main.o [1]
                           - 0xe0028030    0x10
 
-Absolute sections, part 10 of 25:          0x8
+Absolute sections, part 11 of 26:          0x8
   .noinit          uninit   0xe002c000     0x4  configHW.o [1]
   .noinit          uninit   0xe002c004     0x4  InterruptConf.o [1]
                           - 0xe002c008     0x8
 
-Absolute sections, part 11 of 25:          0x4
+Absolute sections, part 12 of 26:          0x4
   .noinit          uninit   0xe002c014     0x4  configHW.o [1]
                           - 0xe002c018     0x4
 
-Absolute sections, part 12 of 25:          0x8
+Absolute sections, part 13 of 26:          0x8
   .noinit          uninit   0xe01fc000     0x4  configHW.o [1]
   .noinit          uninit   0xe01fc004     0x4  configHW.o [1]
                           - 0xe01fc008     0x8
 
-Absolute sections, part 13 of 25:          0x4
+Absolute sections, part 14 of 26:          0x4
   .noinit          uninit   0xe01fc040     0x4  configHW.o [1]
                           - 0xe01fc044     0x4
 
-Absolute sections, part 14 of 25:         0x10
+Absolute sections, part 15 of 26:         0x10
   .noinit          uninit   0xe01fc080     0x4  configHW.o [1]
   .noinit          uninit   0xe01fc084     0x4  configHW.o [1]
   .noinit          uninit   0xe01fc088     0x4  configHW.o [1]
   .noinit          uninit   0xe01fc08c     0x4  configHW.o [1]
                           - 0xe01fc090    0x10
 
-Absolute sections, part 15 of 25:          0x4
+Absolute sections, part 16 of 26:          0x4
   .noinit          uninit   0xe01fc0c0     0x4  Timer0.o [1]
                           - 0xe01fc0c4     0x4
 
-Absolute sections, part 16 of 25:          0x4
+Absolute sections, part 17 of 26:          0x4
   .noinit          uninit   0xe01fc100     0x4  configHW.o [1]
                           - 0xe01fc104     0x4
 
-Absolute sections, part 17 of 25:          0x4
+Absolute sections, part 18 of 26:          0x4
   .noinit          uninit   0xe01fc140     0x4  InterruptConf.o [1]
                           - 0xe01fc144     0x4
 
-Absolute sections, part 18 of 25:          0x8
+Absolute sections, part 19 of 26:          0x8
   .noinit          uninit   0xe01fc148     0x4  InterruptConf.o [1]
   .noinit          uninit   0xe01fc14c     0x4  InterruptConf.o [1]
                           - 0xe01fc150     0x8
 
-Absolute sections, part 19 of 25:          0xc
+Absolute sections, part 20 of 26:          0xc
   .noinit          uninit   0xfffff00c     0x4  UART0.o [1]
   .noinit          uninit   0xfffff010     0x4  UART0.o [1]
   .noinit          uninit   0xfffff014     0x4  InterruptConf.o [1]
                           - 0xfffff018     0xc
 
-Absolute sections, part 20 of 25:          0x4
+Absolute sections, part 21 of 26:          0x4
   .noinit          uninit   0xfffff020     0x4  InterruptConf.o [1]
                           - 0xfffff024     0x4
 
-Absolute sections, part 21 of 25:          0x8
+Absolute sections, part 22 of 26:          0x8
   .noinit          uninit   0xfffff030     0x4  InterruptConf.o [1]
   .noinit          uninit   0xfffff034     0x4  InterruptConf.o [1]
                           - 0xfffff038     0x8
 
-Absolute sections, part 22 of 25:          0x4
+Absolute sections, part 23 of 26:          0x4
   .noinit          uninit   0xfffff104     0x4  InterruptConf.o [1]
                           - 0xfffff108     0x4
 
-Absolute sections, part 23 of 25:          0x4
+Absolute sections, part 24 of 26:          0x4
   .noinit          uninit   0xfffff114     0x4  UART0.o [1]
                           - 0xfffff118     0x4
 
-Absolute sections, part 24 of 25:          0x4
+Absolute sections, part 25 of 26:          0x4
   .noinit          uninit   0xfffff204     0x4  InterruptConf.o [1]
                           - 0xfffff208     0x4
 
-Absolute sections, part 25 of 25:          0x4
+Absolute sections, part 26 of 26:          0x4
   .noinit          uninit   0xfffff214     0x4  UART0.o [1]
                           - 0xfffff218     0x4
 
@@ -321,13 +326,13 @@ Zero (__iar_zero_init3)
     ------              -------  -------  -------  -------
 D:\Users\Chirikalo\ARM_proj\AT1315_IAR_v8_test_2018\Debug\Obj: [1]
     InterruptConf.o         356                         40
-    Serial.o                262                56
+    Serial.o                176                56
     Timer0.o                 68                 4        8
     UART0.o                 168                 8       22
-    configHW.o              524                         73
-    main.o                  208       56       29       12
+    configHW.o              576                         77
+    main.o                  204       56       29       12
     ------------------------------------------------------
-    Total:                1 586       56       97      155
+    Total:                1 548       56       97      159
 
 command line: [2]
     ------------------------------------------------------
@@ -384,10 +389,10 @@ shs_l.a: [6]
     ------------------------------------------------------
     Total:                   36
 
-    Gaps                      6        2
+    Gaps                      4        2
     Linker created          148       16    2 144
 ----------------------------------------------------------
-    Grand Total:         10 250       90    2 245      155
+    Grand Total:         10 210       90    2 245      159
 
 
 *******************************************************************************
@@ -396,49 +401,49 @@ shs_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x000029d4          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x000029e4          --   Gb  - Linker created -
-?main                   0x000028ec         Code  Gb  cmain.o [5]
-Abort_Handler           0x00002a20         Code  Wk  vectortrap.o [5]
+.iar.init_table$$Base   0x000029ac          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000029bc          --   Gb  - Linker created -
+?main                   0x000028c4         Code  Gb  cmain.o [5]
+Abort_Handler           0x000029f8         Code  Wk  vectortrap.o [5]
 CSTACK$$Base            0x40000188          --   Gb  - Linker created -
 CSTACK$$Limit           0x40000988          --   Gb  - Linker created -
-DefDummyInterrupt       0x0000240d    0x2  Code  Lc  InterruptConf.o [1]
-FIQ_Handler             0x00002454   0x70  Code  Gb  InterruptConf.o [1]
+DefDummyInterrupt       0x00002441    0x2  Code  Lc  InterruptConf.o [1]
+FIQ_Handler             0x00002488   0x70  Code  Gb  InterruptConf.o [1]
 FIQ_STACK$$Base         0x400009d8          --   Gb  - Linker created -
 FIQ_STACK$$Limit        0x400009e8          --   Gb  - Linker created -
-GPIO2ConfSet            0x00002283   0x46  Code  Gb  configHW.o [1]
-IRQ_Handler             0x00002424   0x30  Code  Gb  InterruptConf.o [1]
+GPIO2ConfSet            0x00002287   0x54  Code  Gb  configHW.o [1]
+IRQ_Handler             0x00002458   0x30  Code  Gb  InterruptConf.o [1]
 IRQ_STACK$$Base         0x40000988          --   Gb  - Linker created -
 IRQ_STACK$$Limit        0x400009d8          --   Gb  - Linker created -
-InitEINT0               0x000024e5   0x4c  Code  Gb  InterruptConf.o [1]
-InitTimer0              0x000022c9   0x42  Code  Gb  configHW.o [1]
-InitTimer0Interrupt     0x000024c5   0x20  Code  Gb  InterruptConf.o [1]
-InitUART0               0x00002313   0x88  Code  Gb  configHW.o [1]
-InitUART0Interrupt      0x000026af   0x28  Code  Gb  UART0.o [1]
-InitVIC                 0x0000240f   0x16  Code  Gb  InterruptConf.o [1]
+InitEINT0               0x00002519   0x4c  Code  Gb  InterruptConf.o [1]
+InitTimer0              0x000022db   0x42  Code  Gb  configHW.o [1]
+InitTimer0Interrupt     0x000024f9   0x20  Code  Gb  InterruptConf.o [1]
+InitUART0               0x00002325   0xa4  Code  Gb  configHW.o [1]
+InitUART0Interrupt      0x0000268b   0x28  Code  Gb  UART0.o [1]
+InitVIC                 0x00002443   0x16  Code  Gb  InterruptConf.o [1]
 LoadInt                 0x000003c1   0x7c  Code  Lc  xprintffull_nomb.o [3]
 MemConfSet              0x00002201   0x34  Code  Gb  configHW.o [1]
 PINSEL2                 0xe002c014    0x4  Data  Gb  configHW.o [1]
-PLLandClockConfSet      0x00002235   0x4e  Code  Gb  configHW.o [1]
-Prefetch_Handler        0x00002a20         Code  Wk  vectortrap.o [5]
-Region$$Table$$Base     0x000029d4          --   Gb  - Linker created -
-Region$$Table$$Limit    0x000029e4          --   Gb  - Linker created -
-SWI_Handler             0x00002a20         Code  Wk  vectortrap.o [5]
-Sleep                   0x0000280b   0x26  Code  Gb  Timer0.o [1]
-StartTimer0             0x0000230b    0x8  Code  Gb  configHW.o [1]
+PLLandClockConfSet      0x00002235   0x52  Code  Gb  configHW.o [1]
+Prefetch_Handler        0x000029f8         Code  Wk  vectortrap.o [5]
+Region$$Table$$Base     0x000029ac          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000029bc          --   Gb  - Linker created -
+SWI_Handler             0x000029f8         Code  Wk  vectortrap.o [5]
+Sleep                   0x000027e3   0x26  Code  Gb  Timer0.o [1]
+StartTimer0             0x0000231d    0x8  Code  Gb  configHW.o [1]
 T0MR0                   0xe0004018    0x4  Data  Gb  configHW.o [1]
 T0PR                    0xe000400c    0x4  Data  Gb  configHW.o [1]
 TestTemp                0x4000015c    0x4  Data  Gb  main.o [1]
-Timer0Interrupt         0x000027f9   0x12  Code  Gb  Timer0.o [1]
+Timer0Interrupt         0x000027d1   0x12  Code  Gb  Timer0.o [1]
 U0RBRTHR                0xe000c000    0x1  Data  Gb  UART0.o [1]
-UART0Interrupt          0x00002679   0x36  Code  Lc  UART0.o [1]
-UART0TxByte             0x000026d7   0x1e  Code  Gb  UART0.o [1]
-Undefined_Handler       0x00002a20         Code  Wk  vectortrap.o [5]
+UART0Interrupt          0x00002655   0x36  Code  Lc  UART0.o [1]
+UART0TxByte             0x000026b3   0x1e  Code  Gb  UART0.o [1]
+Undefined_Handler       0x000029f8         Code  Wk  vectortrap.o [5]
 VICDefVectAddr          0xfffff034    0x4  Data  Gb  InterruptConf.o [1]
 VICVectAddr             0xfffff030    0x4  Data  Gb  InterruptConf.o [1]
 VICVectAddr1            0xfffff104    0x4  Data  Gb  InterruptConf.o [1]
 VICVectAddr5            0xfffff114    0x4  Data  Gb  UART0.o [1]
-VarConfSet              0x0000239b    0x8  Code  Gb  configHW.o [1]
+VarConfSet              0x000023c9    0x8  Code  Gb  configHW.o [1]
 _A_APBDIV               0xe01fc100    0x4  Data  Gb  configHW.o [1]
 _A_EXTINT               0xe01fc140    0x4  Data  Gb  InterruptConf.o [1]
 _A_EXTMODE              0xe01fc148    0x4  Data  Gb  InterruptConf.o [1]
@@ -463,6 +468,7 @@ _A_T0IR                 0xe0004000    0x4  Data  Gb  Timer0.o [1]
 _A_T0MCR                0xe0004014    0x4  Data  Gb  configHW.o [1]
 _A_T0TCR                0xe0004004    0x4  Data  Gb  configHW.o [1]
 _A_U0FCR                0xe000c008    0x4  Data  Gb  UART0.o [1]
+_A_U0FDR                0xe000c028    0x4  Data  Gb  configHW.o [1]
 _A_U0IER                0xe000c004    0x4  Data  Gb  configHW.o [1]
 _A_U0LCR                0xe000c00c    0x1  Data  Gb  configHW.o [1]
 _A_U0LSR                0xe000c014    0x1  Data  Gb  UART0.o [1]
@@ -476,7 +482,7 @@ _GenldFullNoMb          0x00000e31  0x280  Code  Lc  xprintffull_nomb.o [3]
 _LdtobFullNoMb          0x0000097d  0x49a  Code  Lc  xprintffull_nomb.o [3]
 _LitobFullNoMb          0x00000809  0x11e  Code  Lc  xprintffull_nomb.o [3]
 _PrintfFullNoMb         0x00000211  0x1a4  Code  Gb  xprintffull_nomb.o [3]
-_Prout                  0x000029e5   0x1a  Code  Gb  xprout.o [3]
+_Prout                  0x000029bd   0x1a  Code  Gb  xprout.o [3]
 _PutcharsFullNoMb       0x000010b1   0x38  Code  Lc  xprintffull_nomb.o [3]
 _PutfldFullNoMb         0x0000043d  0x268  Code  Lc  xprintffull_nomb.o [3]
 _PuttxtFullNoMb         0x000006f1  0x118  Code  Lc  xprintffull_nomb.o [3]
@@ -499,50 +505,49 @@ __aeabi_ui2d            0x00002044         Code  Gb  U32ToDbl.o [4]
 __aeabi_uidiv           0x00001b24         Code  Gb  I32DivMod.o [5]
 __aeabi_uidivmod        0x00001b24         Code  Gb  I32DivMod.o [5]
 __aeabi_uldivmod        0x00001254         Code  Gb  I64DivMod.o [5]
-__cmain                 0x000028ec         Code  Gb  cmain.o [5]
+__cmain                 0x000028c4         Code  Gb  cmain.o [5]
 __exit                  0x000021e0   0x20  Code  Gb  exit.o [6]
 __iar_Fail_s            0x00001111   0x26  Code  Gb  xfail_s.o [3]
 __iar_Memchr            0x000011bc         Code  Gb  memchr.o [5]
 __iar_Strchr            0x000010f0         Code  Gb  strchr.o [5]
 __iar_dadd              0x000020b0         Code  Gb  DblAdd.o [4]
-__iar_data_init3        0x00002921   0x30  Code  Gb  data_init.o [5]
+__iar_data_init3        0x000028f9   0x30  Code  Gb  data_init.o [5]
 __iar_disable_interrupt
-                        0x000027d4         Code  Gb  main.o [1]
+                        0x000027ac         Code  Gb  main.o [1]
 __iar_dsub              0x00001900         Code  Gb  DblSub.o [4]
 __iar_dsubStart         0x00001920         Code  Gb  DblSub.o [4]
-__iar_enable_interrupt  0x000027e8         Code  Gb  main.o [1]
+__iar_enable_interrupt  0x000027c0         Code  Gb  main.o [1]
 __iar_frexp             0x00001614         Code  Gb  frexp.o [4]
 __iar_frexp64           0x000015fc         Code  Gb  frexp.o [4]
 __iar_frexpl            0x00001614         Code  Gb  frexp.o [4]
 __iar_ldexp64           0x000016f4         Code  Gb  ldexp.o [4]
-__iar_program_start     0x00002864         Code  Gb  cstartup.o [5]
-__iar_return_from_swi   0x00002a24    0x4  Code  Gb  xreturnswi.o [6]
+__iar_program_start     0x0000283c         Code  Gb  cstartup.o [5]
+__iar_return_from_swi   0x000029fc    0x4  Code  Gb  xreturnswi.o [6]
 __iar_scalbln64         0x000016f4         Code  Gb  ldexp.o [4]
 __iar_scalbn64          0x000016f4         Code  Gb  ldexp.o [4]
 __iar_systems$$module {Abs}
                         0x00000001         Data  Gb  command line/config [2]
-__iar_zero_init3        0x00002971   0x3c  Code  Gb  zero_init3.o [5]
-__low_level_init        0x0000291d    0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3        0x00002949   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000028f5    0x4  Code  Gb  low_level_init.o [3]
 __vector                0x00000000         Data  Gb  cstartup.o [5]
-_call_main              0x00002904         Code  Gb  cmain.o [5]
-_exit                   0x00002960         Code  Gb  cexit.o [5]
-_main                   0x0000290c         Code  Gb  cmain.o [5]
+_call_main              0x000028dc         Code  Gb  cmain.o [5]
+_exit                   0x00002938         Code  Gb  cexit.o [5]
+_main                   0x000028e4         Code  Gb  cmain.o [5]
 abort                   0x0000209f    0xc  Code  Gb  abort.o [3]
-byteReceived            0x000025cd   0x34  Code  Gb  Serial.o [1]
-exit                    0x00002953    0xa  Code  Gb  exit.o [3]
+byteReceived            0x000025d7   0x34  Code  Gb  Serial.o [1]
+exit                    0x0000292b    0xa  Code  Gb  exit.o [3]
 frexp                   0x000015fc         Code  Gb  frexp.o [4]
 frexpl                  0x000015fc         Code  Gb  frexp.o [4]
-getchar                 0x000025a3   0x2a  Code  Gb  Serial.o [1]
 inv_temp                0x40000184    0x1  Data  Gb  main.o [1]
 ldexp                   0x000016f4         Code  Gb  ldexp.o [4]
 ldexpl                  0x000016f4         Code  Gb  ldexp.o [4]
-main                    0x00002721   0xb0  Code  Gb  main.o [1]
+main                    0x000026fd   0xac  Code  Gb  main.o [1]
 memchr                  0x000011bc         Code  Gb  memchr.o [5]
 ms_ctr                  0x40000174    0x4  Data  Gb  Timer0.o [1]
 name                    0x40000120   0x14  Data  Gb  main.o [1]
-printf                  0x0000283d   0x28  Code  Gb  printf.o [3]
+printf                  0x00002815   0x28  Code  Gb  printf.o [3]
 pulMemory               0x40000160    0x4  Data  Gb  main.o [1]
-putchar                 0x00002571   0x32  Code  Gb  Serial.o [1]
+putchar                 0x000025a5   0x32  Code  Gb  Serial.o [1]
 rxbuff                  0x40000134   0x14  Data  Lc  Serial.o [1]
 rxbuff_i                0x40000164    0x4  Data  Lc  Serial.o [1]
 rxbuff_j                0x40000168    0x4  Data  Lc  Serial.o [1]
@@ -551,11 +556,10 @@ scalblnl                0x000016f4         Code  Gb  ldexp.o [4]
 scalbn                  0x000016f4         Code  Gb  ldexp.o [4]
 scalbnl                 0x000016f4         Code  Gb  ldexp.o [4]
 scale                   0x00000927   0x4c  Code  Lc  xprintffull_nomb.o [3]
-scanline                0x00002649   0x2e  Code  Gb  Serial.o [1]
 sec_hand                0x40000180    0x4  Data  Lc  xfail_s.o [3]
 strchr                  0x000010f0         Code  Gb  strchr.o [5]
 strlen                  0x00001164         Code  Gb  strlen.o [5]
-txBufEmpty              0x00002601   0x2e  Code  Gb  Serial.o [1]
+txBufEmpty              0x0000260b   0x2e  Code  Gb  Serial.o [1]
 txbuff                  0x40000148   0x14  Data  Lc  Serial.o [1]
 txbuff_i                0x4000016c    0x4  Data  Lc  Serial.o [1]
 txbuff_j                0x40000170    0x4  Data  Lc  Serial.o [1]
@@ -570,9 +574,9 @@ uart0tx_function        0x4000017c    0x4  Data  Lc  UART0.o [1]
 [5] = rt4t_al.a
 [6] = shs_l.a
 
-  10 250 bytes of readonly  code memory
+  10 210 bytes of readonly  code memory
       90 bytes of readonly  data memory
-   2 245 bytes of readwrite data memory (+ 155 absolute)
+   2 245 bytes of readwrite data memory (+ 159 absolute)
 
 Errors: none
 Warnings: none
